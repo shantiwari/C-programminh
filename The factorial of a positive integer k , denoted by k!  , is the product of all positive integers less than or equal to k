@@ -1,0 +1,29 @@
+Complete the function int find_factorial(int k) to find the factorial of the positive number k.
+
+The factorial of a positive integer k
+, denoted by k!
+ , is the product of all positive integers less than or equal to k
+.
+
+                                          k!=k×(k−1)×⋯×1.
+#include <stdio.h>
+int find_factorial(int k)
+{
+int j;
+int ans=1;
+for(j=0;j<k;j++)
+  ans=ans*(j+1);
+  return ans;
+}
+
+int main(){
+    int n,k;
+    scanf("%d",&n);
+
+    for(int i=0;i<n;i++){
+        scanf("%d",&k);
+        printf("%d ", find_factorial(k));
+    }
+    
+    return 0;
+}
