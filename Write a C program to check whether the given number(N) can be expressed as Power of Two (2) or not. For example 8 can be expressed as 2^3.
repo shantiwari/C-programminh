@@ -1,0 +1,23 @@
+#include <stdio.h>
+int ispowerof2(int num)
+{
+    while (num!=1)
+{
+    if(num%2==0)
+    num=num/2;
+    else
+    return 0;
+}
+return 1;
+}
+int main()
+{
+int N;
+printf("enter the number");
+scanf("%d",&N);
+if (ispowerof2(N))
+printf("%d is the number the is power 2",N);
+else
+printf("%d is not power of 2",N);
+return 0;
+}
